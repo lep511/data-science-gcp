@@ -1,5 +1,5 @@
 PROJECT=$(gcloud config get-value project)
-BUCKET=$PROJECT_ID-ml
+BUCKET=$PROJECT-ml
 
 gcloud sql instances create flights \
 --database-version=POSTGRES_13 --cpu=2 --memory=8GiB \
