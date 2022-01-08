@@ -122,7 +122,7 @@ def run(argv=None):
              # Here we use the simplest way of defining a schema:
              # fieldName:fieldType
              schema='age:STRING,mefalsepause:STRING,tumor_size:STRING,inv_falsedes:STRING,'
-             'falsede_caps:STRING,deg_malig:STRING,breast:STRING,breast_quad:STRING,irradiat:STRING,class:STRING',
+             'falsede_caps:BOOL,deg_malig:NUMERIC,breast:STRING,breast_quad:STRING,irradiat:BOOL,class:STRING',
              # Creates the table in BigQuery if it does not yet exist.
              create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
              # Deletes all data in the BigQuery table before writing.
