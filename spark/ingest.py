@@ -55,7 +55,7 @@ class DataIngestion:
         values = re.split(",", re.sub('\r\n', '', re.sub('"', '',
                                                          string_input)))
         row = dict(
-            zip(('age', 'mefalsepause', 'tumor_size', 'inv_falsedes', 'falsede_caps', '	deg_malig', 'breast', 'breast-quad', 'irradiat', 'class'),
+            zip(('age', 'mefalsepause', 'tumor_size', 'inv_falsedes', 'falsede_caps', 'deg_malig', 'breast', 'breast-quad', 'irradiat', 'class'),
                 values))
         return row
 
