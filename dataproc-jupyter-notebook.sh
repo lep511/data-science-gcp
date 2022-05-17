@@ -16,7 +16,7 @@ CLUSTER_NAME=spark-jupyter
 
 gcloud beta dataproc clusters create ${CLUSTER_NAME} \
  --region=${REGION} \
- --image-version=2.0 \
+ --image-version=1.4 \
  --master-machine-type=n1-standard-4 \
  --worker-machine-type=n1-standard-4 \
  --bucket=${BUCKET_NAME} \
